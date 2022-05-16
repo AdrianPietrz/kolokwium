@@ -36,6 +36,7 @@ public class CoffeeMachine {
         } catch (Exception e) {
             coffee.setStatus(Status.ERROR);
             coffee.setMessage(e.getMessage());
+            return coffee;
         }
         coffee.setStatus(Status.READY);
         return coffee;
